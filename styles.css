@@ -1,0 +1,109 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Estilos para el header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333333; /* Color de fondo del banner */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 4px 2px -2px gray; /* Sombra sutil para el banner */
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+}
+
+.juegos-retos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto; /* Espaciado reducido */
+}
+
+/* Imágenes de los costados */
+.imagen-cuadro img {
+    width: 300px; /* Aumentado el tamaño de las imágenes */
+    height: auto; /* Mantiene la proporción */
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Contenido central */
+.contenido-central {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.contenido-central h2 {
+    font-size: 28px;
+    margin-bottom: 5px; /* Espaciado mínimo debajo del título */
+}
+
+button {
+    padding: 10px 25px; /* Reducido el tamaño del botón */
+    background-color: #333333; /* Fondo gris oscuro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px; /* Reducido el tamaño del texto */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px; /* Espaciado reducido debajo del botón */
+}
+
+button:hover {
+    background-color: #555555; /* Gris más claro al pasar el cursor */
+}
+
+/* Estilos para el hr dividido */
+.hr-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0; /* Espaciado mínimo entre contenido */
+}
+
+.left, .right {
+    width: 40%;
+    border: none;
+    border-top: 2px solid #808080; /* Color gris */
+}
+
+/* Contenedor de las imágenes debajo del HR */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Espaciado mínimo entre el HR y las imágenes */
+}
+
+.image-container img {
+    max-width: 100%; /* Ajusta la imagen al ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+}

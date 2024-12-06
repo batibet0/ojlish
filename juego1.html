@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Preguntas</title>
+    <link rel="stylesheet" href="juego1.css">
+</head>
+<body>
+
+<h1>Juego de Preguntas</h1>
+<div id="timer">03:00</div>
+<p id="questionCount">Preguntas: 1 / 50</p>
+<p id="question">¿Qué significa "gato" en inglés?</p>
+<div id="options"></div>
+
+<!-- Overlay de fin de juego -->
+<div id="endMessage">
+    <div id="endMessageContent">
+        <p id="finalMessage">¡Felicitaciones, has terminado el juego!</p>
+        <p id="answeredQuestions">Respuestas correctas: <span id="correctAnswers">0</span> de 50</p>
+        <button class="btn" onclick="goToMenu()">Regresar al menú</button>
+        <button class="btn" onclick="restartGame()">Reiniciar juego</button>
+    </div>
+</div>
+
+<script src="juego1.js"></script>
+</body>
+</html>

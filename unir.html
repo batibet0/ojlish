@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match the Words</title>
+    <link rel="stylesheet" href="Unir.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="leftColumn">
+            <h2>Words</h2>
+            <div id="leftButtons"></div>
+        </div>
+        <div id="rightColumn">
+            <h2>Translations</h2>
+            <div id="rightButtons"></div>
+        </div>
+    </div>
+
+    <div id="message" class="hidden">
+        <p id="timeResult"></p>
+        <button onclick="restartGame()">Restart</button>
+        <button onclick="goToMenu()">Back to Menu</button>
+    </div>
+
+    <script src="Unir.js"></script>
+</body>
+</html>

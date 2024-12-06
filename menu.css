@@ -1,0 +1,89 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Asegura que el banner esté arriba y el contenido abajo */
+    align-items: center;
+    background-color: #f4f4f4; /* Fondo blanco */
+    font-family: Arial, sans-serif;
+}
+
+/* Banner superior */
+.banner {
+    width: 100%;
+    background-color: #595959; /* Gris más oscuro */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra las imágenes */
+    padding: 10px 20px; /* Espaciado interno */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Imagen del logo principal */
+.main-logo {
+    height: 150px; /* Tamaño estándar para el logo */
+    margin-left: 20px; /* Espaciado entre la imagen del logo y el borde */
+}
+
+/* Contenedor principal */
+.menu-container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra todos los elementos */
+    justify-content: flex-start; /* Elementos al inicio */
+    height: calc(100% - 80px); /* Resta el tamaño del banner */
+    margin-top: 60px; /* Mayor espacio desde el banner */
+}
+
+/* Contenedor de botones */
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza los botones */
+    gap: 15px; /* Espaciado entre los botones */
+    width: 100%;
+    margin-top: 50px; /* Ajuste superior para los botones */
+}
+
+/* Botones largos con bordes redondeados */
+.menu-button {
+    padding: 15px; /* Tamaño interno del botón */
+    font-size: 1.2em; /* Tamaño del texto */
+    color: #333; /* Texto gris oscuro */
+    background-color: #d3d3d3; /* Fondo gris claro */
+    border: none; /* Sin bordes */
+    border-radius: 25px; /* Bordes redondeados */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    max-width: 300px; /* Ancho máximo */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centra el texto */
+}
+
+/* Efecto hover en botones */
+.menu-button:hover {
+    background-color: #b0b0b0; /* Gris más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+/* Imagen ajolo al costado de los botones */
+.ajolo-img {
+    width: 250px; /* Tamaño más pequeño de la imagen */
+    height: auto;
+    position: absolute; /* Para colocarla al costado de los botones */
+    left: -280px; /* Ubicada a la izquierda */
+    top: 30px; /* Ubicada a una distancia adecuada desde el top */
+}
+
+/* Ocultar botones */
+.hidden {
+    display: none;
+}

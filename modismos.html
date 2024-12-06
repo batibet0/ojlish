@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Modismos</title>
+    <link rel="stylesheet" href="modismos.css">
+</head>
+<body>
+
+<h1>Juego de Modismos</h1>
+<div id="timer">03:00</div>
+<p id="questionCount">Preguntas: 1 / 15</p>
+<p id="question"></p>
+<div id="options"></div>
+
+<!-- Overlay de fin de juego -->
+<div id="endMessage">
+    <div id="endMessageContent">
+        <p id="finalMessage">¡Felicitaciones, has terminado el juego!</p>
+        <p id="answeredQuestions">Respuestas correctas: <span id="correctAnswers">0</span> de 15</p>
+        <button class="btn" onclick="goToMenu()">Regresar al menú</button>
+        <button class="btn" onclick="restartGame()">Reiniciar juego</button>
+    </div>
+</div>
+
+<script src="modismos.js"></script>
+</body>
+</html>

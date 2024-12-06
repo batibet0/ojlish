@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <!-- Banner Superior -->
+    <div class="banner">
+        <img src="logo.png" alt="Logo de la página" class="main-logo">
+    </div>
+
+    <!-- Contenido Principal -->
+    <div class="menu-container">
+        <h1 class="menu-title"></h1>
+        
+        <!-- Imagen ajolo al costado izquierdo de los botones -->
+        <img src="ajolo.png" alt="Imagen Ajolo" class="ajolo-img">
+
+        <!-- Botones principales -->
+        <div class="menu-buttons" id="mainButtons">
+            <button class="menu-button" id="gameModesButton">Modos de Juego</button>
+            <button class="menu-button" id="backButton">Volver</button>
+            <button class="menu-button" id="settingsButton">Configuración</button>
+        </div>
+
+        <!-- Botones de modos de juegos (ocultos inicialmente) -->
+        <div class="menu-buttons hidden" id="gameModes">
+            <!-- Este botón redirige a cargaj1.html -->
+            <button class="menu-button" id="mode1" onclick="window.location.href='cargaj1.html'">Carrera a Tiempo</button>
+            <button class="menu-button" id="mode2" onclick="window.location.href='cargaj2.html'">Modismos</button>
+            <button class="menu-button" id="mode3" onclick="window.location.href='cargaj3.html'">acompletar</button>
+            <button class="menu-button" id="mode4" onclick="window.location.href='carga4.html'">unir</button>
+            <button class="menu-button" id="mode5">Volver</button>
+        </div>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+/* Estilos para el header */
+header {
+    background-color: #595959; /* Gris más oscuro para el encabezado */
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+/* Contenedor principal del login */
+.login-container {
+    margin-top: 100px; /* Espacio debajo del header */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Máximo ancho del formulario */
+    text-align: center;
+}
+
+/* Título dentro del contenedor */
+h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Estilos para los campos de entrada */
+.input-container {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-container label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el botón de iniciar sesión */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #595959; /* Gris más oscuro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333333; /* Gris aún más oscuro al pasar el cursor */
+}
+
+/* Estilo para el botón "Continuar sin cuenta" */
+.no-account {
+    margin-top: 15px;
+}
+
+.no-account button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Verde brillante */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    animation: blink 1s infinite; /* Animación de parpadeo */
+}
+
+/* Animación de parpadeo */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.no-account button:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el cursor */
+}
